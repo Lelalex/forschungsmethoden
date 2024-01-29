@@ -11,7 +11,7 @@
         }
 
         header {
-            background-color: #000;
+            background-color: #0b1b3d;
             color: #fff;
             padding: 10px;
             display: flex;
@@ -37,28 +37,61 @@
         }
 
         #search-icon {
-            width: 20px; /* Ändere die Größe entsprechend deines Suchsymbols */
+            width: 20px;
             height: 20px;
             cursor: pointer;
         }
 
-        h1, h2 {
+        /* Updated font color for h1 and h2 */
+        h1, h2, h3 {
+            color: #0b1b3d;
             margin-top: 30px;
         }
         
         img {
-            border: 1.5px solid #000; /* Füge einen dünnen Rand um alle Bilder hinzu */
-            max-width: 100%; /* Sorgt dafür, dass die Bilder nicht breiter als der Anzeigebereich sind */
-            height: auto; /* Behält das Seitenverhältnis bei */
+            border: 1.5px solid #000;
+            max-width: 100%;
+            height: auto;
         }
 
         hr {
             margin-top: 30px;
         }
 
+        div {
+            border-left: 1.5px solid #0b1b3d;
+            padding-left: 10px;
+        }
+
+        /* Updated color code for the footer */
         footer {
+            background-color: #0b1b3d;
+            color: #fff;
             text-align: center;
             margin-top: 10px;
+            padding: 10px;
+        }
+
+        /* Styling for the visually appealing boxes */
+        .info-box {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            color: #0b1b3d;
+            border: 1px solid #0b1b3d;
+            border-radius: 8px;
+        }
+
+        .box1 {
+            background-color: #c7d9ff;
+        }
+
+        .box2 {
+            background-color: #a3c6ff;
+        }
+
+        .box3 {
+            background-color: #80b2ff;
         }
     </style>
 </head>
@@ -66,10 +99,6 @@
     <header>
         <div>
             <img id="logo" src="images/Leuphana Logo.png" alt="Leuphana Universität">
-            <span>|</span>
-            <strong>Forschungsmethoden</strong>
-            <span>|</span>
-            <strong>Prof. Dr. Kristina Lemmer </strong>
         </div>
         <div id="search-bar">
             <input type="text" id="search-input" placeholder="Suche...">
@@ -77,14 +106,23 @@
         </div>
     </header>
 
-    <h1>Motivation zur Prozessoptimierung der Patientenverwaltung in Zahnarztpraxen</h1>
-    <div style="border-left: 1.5px solid #000; padding-left: 10px;">
+    <h1>Optimierung der Praxisverwaltung in Zahnarztpraxen</h1>
+    <div class="info-box box1">
+        Forschungsmethoden
+    </div>
+    <div class="info-box box2">
+        Wintersemester 23/24
+    </div>
+    <div class="info-box box3">
+        Die Daten-Denker
+    </div>
+    <div style="border-left: 1.5px solid #0b1b3d; padding-left: 10px;">
         <p>Angesichts der Digitalisierung im Gesundheitswesen erkennen wir die Notwendigkeit, bestehende Prozesse kritisch zu überprüfen und anzupassen. Insbesondere interessierte uns, wie moderne Technologien, wie die bereits eingesetzten Tablets für den Patienten-Check-in, optimal genutzt werden können, und wie Softwarelösungen weiterentwickelt werden sollten, um den Datenschutz zu gewährleisten und den Arbeitsalltag für medizinisches Personal zu erleichtern.</p>
     </div>
-    
-    <h1>Der Prozess in BPMN-Darstellung</h1>
+
+    <h2>Der Prozess in BPMN-Darstellung</h2>
     <img src="images/MainProcess.png" alt="Gesamter Prozess">
-    <div style="border-left: 1px solid #000; padding-left: 10px;">
+    <div style="border-left: 1px solid #0b1b3d; padding-left: 10px;">
         <p>In unserem Forschungsprojekt an der Leuphana Universität Lüneburg untersuchten wir die Patientenverwaltung in Zahnarztpraxen, 
         um Optimierungspotenziale zu identifizieren. Der Fokus lag auf der Analyse und Verbesserung des bestehenden Einsatzes von Praxismanagementsoftware, 
         insbesondere Dampfsoft, und der bereits implementierten Tablet-basierten Technologien für den Patienten-Check-in. 
@@ -96,15 +134,15 @@
         die sich auf datenschutzkonforme und nutzerfreundliche Prozessverbesserungen konzentrieren.</p>
     </div>
 
-    <h2>Subprocess CheckIn</h2>
+    <h3>Subprocess CheckIn</h3>
     <img src="images/SubprozessCheckIn.png" alt="Subprocess CheckIn">
     <p>Deine Erklärung für den Subprozess 1 kommt hier hin.</p>
 
-    <h2>Subprocess Behandlung</h2>
+    <h3>Subprocess Behandlung</h3>
     <img src="images/SubprozessBehandlung.png" alt="Subprocess Behandlung">
     <p>Deine Erklärung für den Subprozess 2 kommt hier hin.</p>
 
-    <h2>Subprocess KZV-Rechnungen</h2>
+    <h3>Subprocess KZV-Rechnungen</h3>
     <img src="images/SubprozessKZV-Rechnungen.png" alt="Subprocess KZV-Rechnungen">
     <p>Deine Erklärung für den Subprozess 3 kommt hier hin.</p>
 
